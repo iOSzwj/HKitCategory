@@ -15,6 +15,7 @@ s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 s.author             = { "hare27" => "hare27@foxmail.com" }
 
 s.platform     = :ios
+s.osx.deployment_target = "10.7"
 
 s.source       = { :git => "https://github.com/hare27/HKitCategory.git", :tag => "0.0.1" }
 
