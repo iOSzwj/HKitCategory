@@ -19,6 +19,6 @@ s.osx.deployment_target = "10.7"
 
 s.source       = { :git => "https://github.com/hare27/HKitCategory.git", :tag => "0.0.1" }
 
-s.source_files  = "HCategoryCategory", "HCategoryCategory/**/*.{h,m}"
+s.source_files  = "HKitCategory", "HKitCategory/**/*.{h,m}"
 
 end
