@@ -1,34 +1,38 @@
 //
-//  UIView+Frame.h
-//  与乐分享
+// UIView+Frame.h
+// 与乐分享
 //
-//  Created by 张文军 on 15/8/14.
-//  Copyright (c) 2015年 hare. All rights reserved.
+// Created by 张文军 on 15/8/14.
+// Copyright (c) 2015年 hare. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 @interface UIView (Frame)
 
-// frame.origin.x
+/** frame.origin.x*/
 @property (nonatomic, assign) CGFloat   x;
-// frame.origin.y
+/** frame.origin.y*/
 @property (nonatomic, assign) CGFloat   y;
-// frame.size.width
+/** 宽度:frame.size.width*/
 @property (nonatomic, assign) CGFloat   width;
-// frame.size.height
+/** 高度:frame.size.height*/
 @property (nonatomic, assign) CGFloat   height;
-// frame.origin
+/** 位置:frame.origin*/
 @property (nonatomic, assign) CGPoint   origin;
-// frame.size
+/** 大小:frame.size*/
 @property (nonatomic, assign) CGSize    size;
-// center.x
+/** center.x*/
 @property (nonatomic, assign) CGFloat   centerX;
-// center.y
+/** center.y*/
 @property (nonatomic, assign) CGFloat   centerY;
-// frame.origin.x + frame.size.width
-@property (nonatomic, readonly) CGFloat   maxX;
-// frame.origin.y + frame.size.height
-@property (nonatomic, readonly) CGFloat   maxY;
+/** 左:frame.origin.x*/
+@property (nonatomic, readonly) CGFloat   left;
+/** 上:frame.origin.y*/
+@property (nonatomic, readonly) CGFloat   top;
+/** 右:frame.origin.x + frame.size.width*/
+@property (nonatomic, readonly) CGFloat   right;
+/** 下:frame.origin.y + frame.size.height*/
+@property (nonatomic, readonly) CGFloat   bottom;
 
 @end
