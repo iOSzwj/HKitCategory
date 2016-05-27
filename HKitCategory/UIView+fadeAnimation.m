@@ -15,13 +15,34 @@
 #define kHorizontalCount  @"horizontalCount"
 #define kIntervalDuration  @"intervalDuration"
 #define kFadeDuration  @"fadeDuration"
+#define kBannerImageArrKey @"bannerImageArr"
+#define kCurrentIndexKey @"currentIndex"
+#define kFirstImageViewKey @"firstImageView"
+#define kSecondImageViewrKey @"secondImageView"
+#define kTopImageViewrKey @"topImageView"
 
 typedef enum : NSUInteger {
     FadeInType,
     FadeOutType,
 } FadeType;
 
+@interface UIView()
+
+/** 当前图片的下标*/
+@property(nonatomic,assign)int currentIndex;
+
+/** 用于轮播的ImageView*/
+@property(nonatomic,strong)UIImageView *firstImageView;
+@property(nonatomic,strong)UIImageView *secondImageView;
+
+/** 上面的imageview*/
+@property(nonatomic,strong)UIImageView *topImageView;
+
+@end
+
 @implementation UIView (fadeAnimation)
+
+#pragma mark - 淡入淡出
 
 /**
  *  配置动画信息
@@ -78,17 +99,70 @@ typedef enum : NSUInteger {
             } completion:nil];
         }
     }
-    
     CGFloat delay = (self.verticalCount+self.horizontalCount)*self.intervalDuration + self.fadeDuration;
-    
-    [self performSelector:@selector(removeFadeAnimation:) withObject:complete afterDelay:delay];
+    [self performSelector:@selector(endAnimation:) withObject:complete afterDelay:delay];
+}
+/** 结束动画*/
+-(void)endAnimation:(void(^)(void))complete{
+    complete();
 }
 
 /** 移除动画*/
--(void)removeFadeAnimation:(void(^)(void))complete{
+-(void)removeFadeAnimation{
     self.maskView = nil;
     self.isAnimation = NO;
-    complete();
+}
+
+#pragma mark - 轮播
+/** 开始轮播*/
+-(void)addBannerAnimationWithImageArr:(NSArray *)imageArr{
+    
+    if (imageArr == nil) {
+        return;
+    }
+    self.bannerImageArr = imageArr;
+    
+    self.topImageView = self.secondImageView;
+    self.currentIndex = -1;
+    
+    /** 开始递归渐变*/
+    [self addBannerAnimation];
+
+}
+
+/** 停止轮播*/
+-(void)stopBannerAnimation{
+    self.bannerImageArr = nil;
+}
+
+/** 开始递归渐变*/
+-(void)addBannerAnimation{
+    
+    __weak typeof(self) _weakSelf = self;
+    
+    if (_weakSelf.bannerImageArr == nil) {
+        return;
+    }
+    
+    if (_weakSelf.topImageView == _weakSelf.secondImageView) {
+        _weakSelf.topImageView = _weakSelf.firstImageView;
+    }else{
+        _weakSelf.topImageView = _weakSelf.secondImageView;
+    }
+    [_weakSelf bringSubviewToFront:_weakSelf.topImageView];
+    _weakSelf.topImageView.image = [_weakSelf getNextImage];
+    [_weakSelf.topImageView fadeInAnimationComplete:^{
+        [_weakSelf addBannerAnimation];
+    }];
+    
+}
+
+-(UIImage*)getNextImage{
+    if(self.currentIndex == self.bannerImageArr.count - 1){
+        self.currentIndex = 0;
+    }
+    self.currentIndex = self.currentIndex + 1;
+    return self.bannerImageArr[self.currentIndex];
 }
 
 #pragma mark - 属性
@@ -158,6 +232,53 @@ typedef enum : NSUInteger {
     fadeDuration = fadeDuration < 0.01 ? 0.01 : fadeDuration;
     fadeDuration = fadeDuration > 1 ? 1 : fadeDuration;
     objc_setAssociatedObject(self, kFadeDuration, @(fadeDuration), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+/** 用于轮播的图片数组*/
+-(NSArray *)bannerImageArr{
+    return objc_getAssociatedObject(self, kBannerImageArrKey);
+}
+-(void)setBannerImageArr:(NSArray *)bannerImageArr{
+    objc_setAssociatedObject(self, kBannerImageArrKey, bannerImageArr, OBJC_ASSOCIATION_RETAIN);
+}
+
+/** 当前图片的下标*/
+-(int)currentIndex{
+    return [objc_getAssociatedObject(self, kCurrentIndexKey) intValue];
+}
+-(void)setCurrentIndex:(int)currentIndex{
+    objc_setAssociatedObject(self, kCurrentIndexKey, @(currentIndex), OBJC_ASSOCIATION_RETAIN);
+}
+/** 用于轮播的ImageView*/
+-(UIImageView *)firstImageView{
+    if (objc_getAssociatedObject(self, kFirstImageViewKey) == nil) {
+        UIImageView *temp = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:temp];
+        self.firstImageView = temp;
+    }
+    return objc_getAssociatedObject(self, kFirstImageViewKey);
+}
+-(void)setFirstImageView:(UIImageView *)firstImageViewKey{
+    objc_setAssociatedObject(self, kFirstImageViewKey, firstImageViewKey, OBJC_ASSOCIATION_RETAIN);
+}
+-(UIImageView *)secondImageView{
+    if (objc_getAssociatedObject(self, kSecondImageViewrKey) == nil) {
+        UIImageView *temp = [[UIImageView alloc] initWithFrame:self.bounds];
+        [self addSubview:temp];
+        self.secondImageView = temp;
+    }
+    return objc_getAssociatedObject(self, kSecondImageViewrKey);
+}
+-(void)setSecondImageView:(UIImageView *)secondImageView{
+    objc_setAssociatedObject(self, kSecondImageViewrKey, secondImageView, OBJC_ASSOCIATION_RETAIN);
+}
+
+/** 上面的imageview*/
+-(UIImageView *)topImageView{
+    return objc_getAssociatedObject(self, kTopImageViewrKey);
+}
+-(void)setTopImageView:(UIImageView *)topImageView{
+    objc_setAssociatedObject(self, kTopImageViewrKey, topImageView, OBJC_ASSOCIATION_RETAIN);
 }
 
 @end

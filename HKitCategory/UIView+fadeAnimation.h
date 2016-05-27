@@ -4,11 +4,13 @@
 //
 //  Created by hare27 on 16/5/25.
 //  Copyright © 2016年 hare27. All rights reserved.
-//  给view添加淡入淡出效果
+//  给view添加淡入淡出效果  轮播动画
 
 #import <UIKit/UIKit.h>
 
 @interface UIView (fadeAnimation)
+
+#pragma mark - 淡入淡出
 
 /** 是否正在动画*/
 @property(nonatomic,assign,readonly)BOOL isAnimation;
@@ -38,5 +40,18 @@
 -(void)fadeOutAnimationComplete:(void(^)(void))complete;
 /** 淡入*/
 -(void)fadeInAnimationComplete:(void(^)(void))complete;
+/** 移除动画*/
+-(void)removeFadeAnimation;
+
+#pragma mark - 轮播
+
+/** 用于轮播的图片数组*/
+@property(nonatomic,strong,readonly)NSArray *bannerImageArr;
+
+/** 开始轮播*/
+-(void)addBannerAnimationWithImageArr:(NSArray *)imageArr;
+
+/** 停止轮播*/
+-(void)stopBannerAnimation;
 
 @end
