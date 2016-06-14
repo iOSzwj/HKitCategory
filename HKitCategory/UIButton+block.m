@@ -24,8 +24,7 @@
 #pragma mark - 生命周期 Life Circle
 +(instancetype)h_buttonWithType:(UIButtonType)type addControlEvent:(UIControlEvents)controlEvent useBlock:(void(^)(void))block{
     UIButton *button = [self buttonWithType:type];
-    button.controlEventBlock = block;
-    [button addTarget:button action:@selector(useBlock) forControlEvents:controlEvent];
+    [button h_useBlock:block forControlEvents:controlEvent];
     return button;
 }
 
@@ -33,6 +32,10 @@
     if (self.controlEventBlock) {
         self.controlEventBlock();
     }
+}
+-(void)h_useBlock:(ControlEventBlock)block forControlEvents:(UIControlEvents)controlEvent{
+    self.controlEventBlock = block;
+    [self addTarget:self action:@selector(useBlock) forControlEvents:controlEvent];
 }
 
 #pragma mark - 方法 Methods

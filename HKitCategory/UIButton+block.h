@@ -13,5 +13,6 @@ typedef void(^ControlEventBlock)(void);
 @interface UIButton (block)
 
 +(instancetype)h_buttonWithType:(UIButtonType)type addControlEvent:(UIControlEvents)controlEvent useBlock:(ControlEventBlock)block;
+-(void)h_useBlock:(ControlEventBlock)block forControlEvents:(UIControlEvents)controlEvent;
 
 @end
