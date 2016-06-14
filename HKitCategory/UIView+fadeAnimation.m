@@ -138,21 +138,19 @@ typedef enum : NSUInteger {
 /** 开始递归渐变*/
 -(void)addBannerAnimation{
     
-    __weak typeof(self) _weakSelf = self;
-    
-    if (_weakSelf.bannerImageArr == nil) {
+    if (self.bannerImageArr == nil) {
         return;
     }
     
-    if (_weakSelf.topImageView == _weakSelf.secondImageView) {
-        _weakSelf.topImageView = _weakSelf.firstImageView;
+    if (self.topImageView == self.secondImageView) {
+        self.topImageView = self.firstImageView;
     }else{
-        _weakSelf.topImageView = _weakSelf.secondImageView;
+        self.topImageView = self.secondImageView;
     }
-    [_weakSelf bringSubviewToFront:_weakSelf.topImageView];
-    _weakSelf.topImageView.image = [_weakSelf getNextImage];
-    [_weakSelf.topImageView fadeInAnimationComplete:^{
-        [_weakSelf addBannerAnimation];
+    [self bringSubviewToFront:self.topImageView];
+    self.topImageView.image = [self getNextImage];
+    [self.topImageView fadeInAnimationComplete:^{
+        [self addBannerAnimation];
     }];
     
 }
