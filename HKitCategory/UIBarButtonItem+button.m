@@ -18,5 +18,14 @@
     [button sizeToFit];
     return [[self alloc] initWithCustomView:button];
 }
++ (instancetype)itemWithTitle:(NSString *)title ImageName:(NSString *)imageName highImageName:(NSString *)highImageName usBlock:(void(^)())block{
+    UIButton *button = [UIButton h_buttonWithType:UIButtonTypeCustom addControlEvent:UIControlEventTouchUpInside useBlock:block];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:imageName] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:highImageName] forState:UIControlStateHighlighted];
+    [button sizeToFit];
+    return [[self alloc] initWithCustomView:button];
+
+}
 
 @end

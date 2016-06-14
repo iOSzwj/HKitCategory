@@ -11,5 +11,6 @@
 @interface UIBarButtonItem (button)
 
 + (instancetype)itemWithImageName:(NSString *)imageName highImageName:(NSString *)highImageName usBlock:(void(^)())block;
++ (instancetype)itemWithTitle:(NSString *)title ImageName:(NSString *)imageName highImageName:(NSString *)highImageName usBlock:(void(^)())block;
 
 @end
