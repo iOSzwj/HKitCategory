@@ -6,6 +6,7 @@ s.version      = "0.0.1"
 s.summary      = "UIKit的分类"
 
 s.description  = <<-DESC
+UIKit的分类
 DESC
 
 s.homepage     = "https://github.com/hare27/HKitCategory"
