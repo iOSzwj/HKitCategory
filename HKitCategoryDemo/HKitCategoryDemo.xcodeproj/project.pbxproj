@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		41E0EF241E9E4DDB00C88A18 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */; };
 		B83CE4AE1D606E9900A0D6A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4AD1D606E9900A0D6A8 /* main.m */; };
 		B83CE4B11D606E9900A0D6A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4B01D606E9900A0D6A8 /* AppDelegate.m */; };
 		B83CE4B41D606E9900A0D6A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4B31D606E9900A0D6A8 /* ViewController.m */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41E0EF221E9E4DDB00C88A18 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		B83CE4A91D606E9900A0D6A8 /* HKitCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKitCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83CE4AD1D606E9900A0D6A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B83CE4AF1D606E9900A0D6A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				B83CE4CF1D606EA600A0D6A8 /* UIView+fadeAnimation.m */,
 				B83CE4D01D606EA600A0D6A8 /* UIView+Frame.h */,
 				B83CE4D11D606EA600A0D6A8 /* UIView+Frame.m */,
+				41E0EF221E9E4DDB00C88A18 /* UIColor+Hex.h */,
+				41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */,
 			);
 			name = HKitCategory;
 			path = ../../HKitCategory;
@@ -201,6 +206,7 @@
 				B83CE4B41D606E9900A0D6A8 /* ViewController.m in Sources */,
 				B83CE4B11D606E9900A0D6A8 /* AppDelegate.m in Sources */,
 				B83CE4D51D606EA600A0D6A8 /* UITextField+placeholderColor.m in Sources */,
+				41E0EF241E9E4DDB00C88A18 /* UIColor+Hex.m in Sources */,
 				B83CE4D81D606EA600A0D6A8 /* UIView+Frame.m in Sources */,
 				B83CE4AE1D606E9900A0D6A8 /* main.m in Sources */,
 			);
@@ -353,6 +359,7 @@
 				B83CE4C21D606E9900A0D6A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

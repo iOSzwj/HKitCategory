@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "UIImage+Circle.h"
+#import "UIColor+Hex.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIImageView *originalImageView;
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.view.backgroundColor = [UIColor colorWithHexString:@"0x00BB00"];
     
     self.circleImageView.backgroundColor = [UIColor redColor];
     
