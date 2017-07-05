@@ -7,25 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41E0EF241E9E4DDB00C88A18 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */; };
+		92ED1BC81F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BB51F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.m */; };
+		92ED1BC91F0CEE020075D8FA /* UIBarButtonItem+button.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BB71F0CEE020075D8FA /* UIBarButtonItem+button.m */; };
+		92ED1BCA1F0CEE020075D8FA /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BB91F0CEE020075D8FA /* UIColor+Hex.m */; };
+		92ED1BCB1F0CEE020075D8FA /* UIControl+BlocksKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BBB1F0CEE020075D8FA /* UIControl+BlocksKit.m */; };
+		92ED1BCC1F0CEE020075D8FA /* UIImage+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BBD1F0CEE020075D8FA /* UIImage+Circle.m */; };
+		92ED1BCD1F0CEE020075D8FA /* UINavigationController+jump.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BBF1F0CEE020075D8FA /* UINavigationController+jump.m */; };
+		92ED1BCE1F0CEE020075D8FA /* UITextField+placeholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BC11F0CEE020075D8FA /* UITextField+placeholderColor.m */; };
+		92ED1BCF1F0CEE020075D8FA /* UIView+AutoRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BC31F0CEE020075D8FA /* UIView+AutoRotate.m */; };
+		92ED1BD01F0CEE020075D8FA /* UIView+fadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BC51F0CEE020075D8FA /* UIView+fadeAnimation.m */; };
+		92ED1BD11F0CEE020075D8FA /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ED1BC71F0CEE020075D8FA /* UIView+Frame.m */; };
 		B83CE4AE1D606E9900A0D6A8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4AD1D606E9900A0D6A8 /* main.m */; };
 		B83CE4B11D606E9900A0D6A8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4B01D606E9900A0D6A8 /* AppDelegate.m */; };
 		B83CE4B41D606E9900A0D6A8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4B31D606E9900A0D6A8 /* ViewController.m */; };
 		B83CE4B71D606E9900A0D6A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83CE4B51D606E9900A0D6A8 /* Main.storyboard */; };
 		B83CE4B91D606E9900A0D6A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B83CE4B81D606E9900A0D6A8 /* Assets.xcassets */; };
 		B83CE4BC1D606E9900A0D6A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B83CE4BA1D606E9900A0D6A8 /* LaunchScreen.storyboard */; };
-		B83CE4D21D606EA600A0D6A8 /* UIBarButtonItem+button.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4C51D606EA600A0D6A8 /* UIBarButtonItem+button.m */; };
-		B83CE4D31D606EA600A0D6A8 /* UIButton+block.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4C71D606EA600A0D6A8 /* UIButton+block.m */; };
-		B83CE4D41D606EA600A0D6A8 /* UIImage+Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4C91D606EA600A0D6A8 /* UIImage+Circle.m */; };
-		B83CE4D51D606EA600A0D6A8 /* UITextField+placeholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4CB1D606EA600A0D6A8 /* UITextField+placeholderColor.m */; };
-		B83CE4D61D606EA600A0D6A8 /* UIView+AutoRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4CD1D606EA600A0D6A8 /* UIView+AutoRotate.m */; };
-		B83CE4D71D606EA600A0D6A8 /* UIView+fadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4CF1D606EA600A0D6A8 /* UIView+fadeAnimation.m */; };
-		B83CE4D81D606EA600A0D6A8 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = B83CE4D11D606EA600A0D6A8 /* UIView+Frame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41E0EF221E9E4DDB00C88A18 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
-		41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		92ED1BB41F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+BlocksKit.h"; sourceTree = "<group>"; };
+		92ED1BB51F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+BlocksKit.m"; sourceTree = "<group>"; };
+		92ED1BB61F0CEE020075D8FA /* UIBarButtonItem+button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+button.h"; sourceTree = "<group>"; };
+		92ED1BB71F0CEE020075D8FA /* UIBarButtonItem+button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+button.m"; sourceTree = "<group>"; };
+		92ED1BB81F0CEE020075D8FA /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		92ED1BB91F0CEE020075D8FA /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		92ED1BBA1F0CEE020075D8FA /* UIControl+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+BlocksKit.h"; sourceTree = "<group>"; };
+		92ED1BBB1F0CEE020075D8FA /* UIControl+BlocksKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+BlocksKit.m"; sourceTree = "<group>"; };
+		92ED1BBC1F0CEE020075D8FA /* UIImage+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Circle.h"; sourceTree = "<group>"; };
+		92ED1BBD1F0CEE020075D8FA /* UIImage+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Circle.m"; sourceTree = "<group>"; };
+		92ED1BBE1F0CEE020075D8FA /* UINavigationController+jump.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+jump.h"; sourceTree = "<group>"; };
+		92ED1BBF1F0CEE020075D8FA /* UINavigationController+jump.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+jump.m"; sourceTree = "<group>"; };
+		92ED1BC01F0CEE020075D8FA /* UITextField+placeholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeholderColor.h"; sourceTree = "<group>"; };
+		92ED1BC11F0CEE020075D8FA /* UITextField+placeholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeholderColor.m"; sourceTree = "<group>"; };
+		92ED1BC21F0CEE020075D8FA /* UIView+AutoRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoRotate.h"; sourceTree = "<group>"; };
+		92ED1BC31F0CEE020075D8FA /* UIView+AutoRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoRotate.m"; sourceTree = "<group>"; };
+		92ED1BC41F0CEE020075D8FA /* UIView+fadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+fadeAnimation.h"; sourceTree = "<group>"; };
+		92ED1BC51F0CEE020075D8FA /* UIView+fadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+fadeAnimation.m"; sourceTree = "<group>"; };
+		92ED1BC61F0CEE020075D8FA /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		92ED1BC71F0CEE020075D8FA /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		B83CE4A91D606E9900A0D6A8 /* HKitCategoryDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKitCategoryDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B83CE4AD1D606E9900A0D6A8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B83CE4AF1D606E9900A0D6A8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -36,20 +56,6 @@
 		B83CE4B81D606E9900A0D6A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B83CE4BB1D606E9900A0D6A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B83CE4BD1D606E9900A0D6A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B83CE4C41D606EA600A0D6A8 /* UIBarButtonItem+button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+button.h"; sourceTree = "<group>"; };
-		B83CE4C51D606EA600A0D6A8 /* UIBarButtonItem+button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+button.m"; sourceTree = "<group>"; };
-		B83CE4C61D606EA600A0D6A8 /* UIButton+block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+block.h"; sourceTree = "<group>"; };
-		B83CE4C71D606EA600A0D6A8 /* UIButton+block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+block.m"; sourceTree = "<group>"; };
-		B83CE4C81D606EA600A0D6A8 /* UIImage+Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Circle.h"; sourceTree = "<group>"; };
-		B83CE4C91D606EA600A0D6A8 /* UIImage+Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Circle.m"; sourceTree = "<group>"; };
-		B83CE4CA1D606EA600A0D6A8 /* UITextField+placeholderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+placeholderColor.h"; sourceTree = "<group>"; };
-		B83CE4CB1D606EA600A0D6A8 /* UITextField+placeholderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+placeholderColor.m"; sourceTree = "<group>"; };
-		B83CE4CC1D606EA600A0D6A8 /* UIView+AutoRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoRotate.h"; sourceTree = "<group>"; };
-		B83CE4CD1D606EA600A0D6A8 /* UIView+AutoRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoRotate.m"; sourceTree = "<group>"; };
-		B83CE4CE1D606EA600A0D6A8 /* UIView+fadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+fadeAnimation.h"; sourceTree = "<group>"; };
-		B83CE4CF1D606EA600A0D6A8 /* UIView+fadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+fadeAnimation.m"; sourceTree = "<group>"; };
-		B83CE4D01D606EA600A0D6A8 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		B83CE4D11D606EA600A0D6A8 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		92ED1BB31F0CEE020075D8FA /* HKitCategory */ = {
+			isa = PBXGroup;
+			children = (
+				92ED1BB41F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.h */,
+				92ED1BB51F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.m */,
+				92ED1BB61F0CEE020075D8FA /* UIBarButtonItem+button.h */,
+				92ED1BB71F0CEE020075D8FA /* UIBarButtonItem+button.m */,
+				92ED1BB81F0CEE020075D8FA /* UIColor+Hex.h */,
+				92ED1BB91F0CEE020075D8FA /* UIColor+Hex.m */,
+				92ED1BBA1F0CEE020075D8FA /* UIControl+BlocksKit.h */,
+				92ED1BBB1F0CEE020075D8FA /* UIControl+BlocksKit.m */,
+				92ED1BBC1F0CEE020075D8FA /* UIImage+Circle.h */,
+				92ED1BBD1F0CEE020075D8FA /* UIImage+Circle.m */,
+				92ED1BBE1F0CEE020075D8FA /* UINavigationController+jump.h */,
+				92ED1BBF1F0CEE020075D8FA /* UINavigationController+jump.m */,
+				92ED1BC01F0CEE020075D8FA /* UITextField+placeholderColor.h */,
+				92ED1BC11F0CEE020075D8FA /* UITextField+placeholderColor.m */,
+				92ED1BC21F0CEE020075D8FA /* UIView+AutoRotate.h */,
+				92ED1BC31F0CEE020075D8FA /* UIView+AutoRotate.m */,
+				92ED1BC41F0CEE020075D8FA /* UIView+fadeAnimation.h */,
+				92ED1BC51F0CEE020075D8FA /* UIView+fadeAnimation.m */,
+				92ED1BC61F0CEE020075D8FA /* UIView+Frame.h */,
+				92ED1BC71F0CEE020075D8FA /* UIView+Frame.m */,
+			);
+			name = HKitCategory;
+			path = ../../HKitCategory;
+			sourceTree = "<group>";
+		};
 		B83CE4A01D606E9900A0D6A8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +116,7 @@
 		B83CE4AB1D606E9900A0D6A8 /* HKitCategoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				B83CE4C31D606EA600A0D6A8 /* HKitCategory */,
+				92ED1BB31F0CEE020075D8FA /* HKitCategory */,
 				B83CE4AF1D606E9900A0D6A8 /* AppDelegate.h */,
 				B83CE4B01D606E9900A0D6A8 /* AppDelegate.m */,
 				B83CE4B21D606E9900A0D6A8 /* ViewController.h */,
@@ -102,30 +136,6 @@
 				B83CE4AD1D606E9900A0D6A8 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		B83CE4C31D606EA600A0D6A8 /* HKitCategory */ = {
-			isa = PBXGroup;
-			children = (
-				B83CE4C41D606EA600A0D6A8 /* UIBarButtonItem+button.h */,
-				B83CE4C51D606EA600A0D6A8 /* UIBarButtonItem+button.m */,
-				B83CE4C61D606EA600A0D6A8 /* UIButton+block.h */,
-				B83CE4C71D606EA600A0D6A8 /* UIButton+block.m */,
-				B83CE4C81D606EA600A0D6A8 /* UIImage+Circle.h */,
-				B83CE4C91D606EA600A0D6A8 /* UIImage+Circle.m */,
-				B83CE4CA1D606EA600A0D6A8 /* UITextField+placeholderColor.h */,
-				B83CE4CB1D606EA600A0D6A8 /* UITextField+placeholderColor.m */,
-				B83CE4CC1D606EA600A0D6A8 /* UIView+AutoRotate.h */,
-				B83CE4CD1D606EA600A0D6A8 /* UIView+AutoRotate.m */,
-				B83CE4CE1D606EA600A0D6A8 /* UIView+fadeAnimation.h */,
-				B83CE4CF1D606EA600A0D6A8 /* UIView+fadeAnimation.m */,
-				B83CE4D01D606EA600A0D6A8 /* UIView+Frame.h */,
-				B83CE4D11D606EA600A0D6A8 /* UIView+Frame.m */,
-				41E0EF221E9E4DDB00C88A18 /* UIColor+Hex.h */,
-				41E0EF231E9E4DDB00C88A18 /* UIColor+Hex.m */,
-			);
-			name = HKitCategory;
-			path = ../../HKitCategory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +164,7 @@
 		B83CE4A11D606E9900A0D6A8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = hare27;
 				TargetAttributes = {
 					B83CE4A81D606E9900A0D6A8 = {
@@ -198,17 +208,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B83CE4D71D606EA600A0D6A8 /* UIView+fadeAnimation.m in Sources */,
-				B83CE4D31D606EA600A0D6A8 /* UIButton+block.m in Sources */,
-				B83CE4D41D606EA600A0D6A8 /* UIImage+Circle.m in Sources */,
-				B83CE4D61D606EA600A0D6A8 /* UIView+AutoRotate.m in Sources */,
-				B83CE4D21D606EA600A0D6A8 /* UIBarButtonItem+button.m in Sources */,
+				92ED1BCB1F0CEE020075D8FA /* UIControl+BlocksKit.m in Sources */,
+				92ED1BCC1F0CEE020075D8FA /* UIImage+Circle.m in Sources */,
+				92ED1BC91F0CEE020075D8FA /* UIBarButtonItem+button.m in Sources */,
+				92ED1BCA1F0CEE020075D8FA /* UIColor+Hex.m in Sources */,
+				92ED1BCD1F0CEE020075D8FA /* UINavigationController+jump.m in Sources */,
+				92ED1BD11F0CEE020075D8FA /* UIView+Frame.m in Sources */,
 				B83CE4B41D606E9900A0D6A8 /* ViewController.m in Sources */,
+				92ED1BC81F0CEE020075D8FA /* UIBarButtonItem+BlocksKit.m in Sources */,
 				B83CE4B11D606E9900A0D6A8 /* AppDelegate.m in Sources */,
-				B83CE4D51D606EA600A0D6A8 /* UITextField+placeholderColor.m in Sources */,
-				41E0EF241E9E4DDB00C88A18 /* UIColor+Hex.m in Sources */,
-				B83CE4D81D606EA600A0D6A8 /* UIView+Frame.m in Sources */,
+				92ED1BCF1F0CEE020075D8FA /* UIView+AutoRotate.m in Sources */,
+				92ED1BD01F0CEE020075D8FA /* UIView+fadeAnimation.m in Sources */,
 				B83CE4AE1D606E9900A0D6A8 /* main.m in Sources */,
+				92ED1BCE1F0CEE020075D8FA /* UITextField+placeholderColor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +260,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -293,8 +307,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

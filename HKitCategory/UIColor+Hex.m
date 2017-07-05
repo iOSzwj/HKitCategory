@@ -10,7 +10,7 @@
 
 @implementation UIColor (Hex)
 
-/** 数字0xFFFFFF 转 白色*/
+/** 数字0xFFFFFF 转 颜色*/
 +(instancetype)colorWithHex:(int)hex{
     
     int red = hex & 0xff0000;
@@ -26,15 +26,12 @@
     return [self colorWithHex:[self intWithHexString:hex]];
     
 }
-/** 16进制字符串 转 16进制数*/
+/** 字符串0xFFFFFF 转 数字*/
 +(int)intWithHexString:(NSString *)hex{
     
     const char *hexChar = [hex cStringUsingEncoding:NSUTF8StringEncoding];
-    
     int hexNumber;
-    
     sscanf(hexChar, "%x", &hexNumber);
-    
     return hexNumber;
 }
 

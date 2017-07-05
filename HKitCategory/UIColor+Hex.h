@@ -10,9 +10,9 @@
 
 @interface UIColor (Hex)
 
-/** 数字0xFFFFFF 转 白色*/
+/** 数字0xFFFFFF 转 颜色*/
 +(instancetype)colorWithHex:(int)hex;
-/** 字符串0xFFFFFF 转 白色*/
+/** 字符串0xFFFFFF 转 颜色*/
 +(instancetype)colorWithHexString:(NSString *)hex;
 
 @end
