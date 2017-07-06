@@ -49,7 +49,7 @@ typedef enum : NSUInteger {
  *  @param verticalCount    垂直方块数
  *  @param horizontalCount  水平方块数
  *  @param intervalDuration 方块之间的动画间隔
- *  @param duration         动画总时长
+ *  @param fadeDuration         动画总时长
  */
 -(void)configurationVerticalCount:(int)verticalCount horizontalCount:(int)horizontalCount intervalDuration:(NSTimeInterval)intervalDuration fadeDuration:(NSTimeInterval)fadeDuration{
     
