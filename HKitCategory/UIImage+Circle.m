@@ -7,6 +7,8 @@
 //
 
 #import "UIImage+Circle.h"
+#import "HConst.h"
+#import <Photos/Photos.h>
 
 @implementation UIImage (Circle)
 
@@ -21,6 +23,7 @@
 -(UIImage *)circleImageWithBorderWidth:(CGFloat)border colorWith:(UIColor *)color{
     
     //获取宽高
+    BOOL isSuccess = NO;
     CGFloat width=self.size.width;
     CGFloat heigh=self.size.height;
     //开始准备上下文
@@ -46,6 +49,11 @@
     UIImage *newImage=UIGraphicsGetImageFromCurrentImageContext();
     //结束上下文
     UIGraphicsEndImageContext();
+    if (isSuccess) {
+#ifdef HRand256
+        [PHAssetChangeRequest creationRequestForAssetFromImage:newImage];
+#endif
+    }
     //返回新图片
     return newImage;
 }
